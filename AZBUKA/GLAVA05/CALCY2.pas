@@ -1,0 +1,8 @@
+PROGRAM CALCY2(OUTPUT);
+VAR     T,X,Y:INTEGER;
+BEGIN
+T:= 4;
+X:= T*T+1;
+Y:= X - 3*T*X;
+WRITE(Y);
+END.

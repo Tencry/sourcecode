@@ -1,0 +1,14 @@
+PROGRAM BEC (INPUT, OUTPUT);
+VAR I: INTEGER;
+    MAX, X:REAL;
+BEGIN
+READ(X);
+MAX:=X;
+FOR I:=2 TO 10 DO
+    BEGIN
+    READ(X);
+    IF X > MAX
+       THEN MAX:=X
+    END;
+WRITE(MAX)
+END.

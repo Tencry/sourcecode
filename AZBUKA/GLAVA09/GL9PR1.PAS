@@ -1,0 +1,9 @@
+PROGRAM GL9PR1;
+VAR I,N,P:INTEGER;
+BEGIN
+  P:=1;
+  READ(N);
+  FOR I:=1 TO N DO
+    P:=P*I;
+  WRITE(P);
+END.

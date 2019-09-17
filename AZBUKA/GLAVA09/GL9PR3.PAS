@@ -1,0 +1,11 @@
+PROGRAM GL9PR3;
+VAR I,N:INTEGER;
+    R:REAL;
+BEGIN
+  R:=1;
+  READ(N);
+  FOR I:=1 TO N DO
+    R:= R*COS(I);
+  WRITE(R);
+  READLN;
+END.

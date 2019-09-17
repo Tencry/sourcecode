@@ -1,0 +1,11 @@
+PROGRAM GL9SUM;
+{$MODE DELPHI}
+VAR I,S:INTEGER;
+BEGIN
+    S:=0;
+    FOR I:=2 TO 100 DO
+        IF I MOD 2 = 0 THEN
+           S:=S+SQR(I);
+    WRITE(S);
+    READLN;
+END.

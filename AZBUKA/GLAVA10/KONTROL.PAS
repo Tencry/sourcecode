@@ -1,0 +1,15 @@
+PROGRAM KONTROL (INPUT, OUTPUT);
+VAR I, KOL:INTEGER;
+    A, B, D, DL, DM, L, M, RO:REAL;
+BEGIN
+READ(L, D, A, B, RO);
+KOL:=0; M:=0;
+FOR I:=1 TO 5 DO
+    BEGIN
+    READ (DL, DM);
+    IF (ABS(L-DL)<=A)AND(ABS(D-DM)<=B)
+       THEN KOL:=KOL+1
+       ELSE M:=M+3.1415*DM*DM*DL*RO/4
+    END;
+WRITE (KOL, M)
+END.

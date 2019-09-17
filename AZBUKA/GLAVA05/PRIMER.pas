@@ -1,0 +1,9 @@
+PROGRAM PRIMER(OUTPUT);
+VAR     A,X:INTEGER;
+        Y:REAL;
+BEGIN
+X:=5;
+A:=(X+2)*X;
+Y:=-12400/(A*A);
+WRITE(Y);
+END.

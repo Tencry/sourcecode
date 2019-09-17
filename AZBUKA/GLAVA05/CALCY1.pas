@@ -1,0 +1,8 @@
+PROGRAM CALCY1(OUTPUT);
+VAR     T,X,Y:INTEGER;
+BEGIN
+X:=10;
+T:=X-3;
+Y:= (T*T+8)*(T*T+8);
+WRITE(Y);
+END.
