@@ -12,10 +12,12 @@ main()
 	upper = 300;	/* верхняя граница */
 	step = 20;	/* величина шага */
 
+	printf("fahr celsius\n");
+
 	fahr = lower;
 	while (fahr <= upper) {
 		celsius = (5.0/9.0) * (fahr - 32.0);
-		printf("%3.0f %6.1f\n", fahr, celsius);
+		printf("%3.0f %7.1f\n", fahr, celsius);
 		fahr = fahr + step;
 	}
 }
