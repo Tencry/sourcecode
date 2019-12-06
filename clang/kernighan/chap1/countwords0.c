@@ -8,13 +8,15 @@ main()
 	int c, state;
 	long nl, nw, ns;
 
-	state = nl = nw = ns = 0;
+	state = OUT_WORD;
+	nl = nw = ns = 0;
 	while ((c = getchar()) != EOF) {
-		if (c != ' ' && c != '\t' && c != '\n')
+		if (state == OUT_WORD && (c != ' ' && c != '\t' && c != '\n')) {
 			state = IN_WORD;
+			++nw;
+		}
 		if (state == IN_WORD && (c == ' ' || c == '\t' || c == '\n')) {
 			state = OUT_WORD;
-			++nw;
 		}
 		if (c == '\n')
 			++nl;
