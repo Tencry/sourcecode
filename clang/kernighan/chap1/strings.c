@@ -19,7 +19,10 @@ main()
 			copy(longest, line);
 		}
 	if (max > 0)	/* была непустая строка */
+	{
 		printf("%s", longest);
+		printf("%dC\n", max);
+	}
 
 	return 0;
 }
