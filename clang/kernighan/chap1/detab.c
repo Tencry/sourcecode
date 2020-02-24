@@ -11,8 +11,9 @@ main()
 	char newline[MAXLINE];
 
 	while ((len = getline(line, MAXLINE)) > 0) {
+		printf("%dC %s", len, line);
 		len = detab(newline, line, 2);
-		printf("%s", newline);
+		printf("%dC %s", len, newline);
 	}
 }
 
