@@ -1,0 +1,1 @@
+int show_msg(char *m, char *c);
